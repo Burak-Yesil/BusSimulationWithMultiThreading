@@ -1,0 +1,43 @@
+//Burak Yesil 
+//I pledge my honor that I have abided by the Stevens Honor System.
+
+//Notes
+
+//PEOPLE: A person arrives at the bus stop queue
+//People wait in line for the bus, and a new person shows up after a exponentially-distributed inter-arrival) time.
+
+//BUS STOP/ARRIVAL: A bus arrives at a bus stop 
+//If the bus stop is empty move to next stop and do this. otherwise, at the next bus stop, the first person in 
+//line boards the bus.
+
+//BOARDER: The bus stop line size decrements by one
+//Bus decrements until the stop is empty 
+
+//Format of initialization.txt
+//line 1: number of bus stops
+//line 2: number of buses
+
+class Simulation{
+    //Are these paramters set by the initialization file
+    static int numOfBusStops = 15; //15 total bus stops
+    public int numOfBuses = 5; //5 total buses
+    private int timeBetweenTwoStops = 5; //5 minutes to drive between two contiguous stops
+    private int meanArrivalRate = 5; //5 people per minute
+    private int boardTime = 2; //2 seconds to board for each passanger
+    private int simulationTime = 8; //the total simulation last 8 hours
+
+
+
+    public static void main(String[] args){
+        
+        //First read from the initializations.txt file
+        BusStop n = new BusStop(null, null);
+
+        
+    }
+
+}
+
+
+
+//First write the code to create the doubly linked list 
